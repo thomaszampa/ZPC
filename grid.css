@@ -13,5 +13,35 @@
 .grid-container div {
   min-height: 15vh;
   min-width: 10vw;
+
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pad-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+
+  justify-content: center;
+  text-align: right;
+
+  padding: 10px;
+  margin: 10px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pad-container div {
+  min-height: 15vh;
+  min-width: 10vw;
+
+  background-color: blue;
+}
+
+.item-43 {
+  grid-area: 4 / 3 / 8 / 7;
+}
+
+.item-11 {
+  grid-area: 3 / 3 / 1 / 7;
 }
