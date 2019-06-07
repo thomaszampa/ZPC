@@ -9,13 +9,6 @@
   justify-content: center;
 }
 
-.grid-container div {
-  min-height: 15vh;
-  min-width: 10vw;
-
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .pad-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -24,18 +17,12 @@
   justify-content: center;
   text-align: right;
 
-  padding: 20px;
+  padding: 40px;
   margin: 20px;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #DCDDE2;
 }
 
-.pad-container div {
-  min-height: 15vh;
-  min-width: 10vw;
-
-  padding: 10px;
-}
 /* GRID AREA = Row Start / Col Start / Row End / Col End*/
 
 .item-1 {
