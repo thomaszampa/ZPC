@@ -37,10 +37,44 @@ html body {
   border-top-style: solid;
   border-top-width: 10px;
   border-top-color: #0676C0;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   background-color: #3189D3;
+}
+
+.meter-container {
+  position: relative;
+  margin: auto;
+
+  width: 55%;
+  height: 90%;
+
+  border-style: solid;
+  border-color: #0F0E14;
+  border-width: 1.5px;
+}
+
+.meter-button-1 {
+  position: relative;
+  margin: auto;
+
+  background-color: #FAF9F5;
+}
+
+.meter-button-2 {
+  position: relative;
+  margin: auto;
+
+  background-color: #FAF9F5;
+}
+
+.fader-meter-left {
+  
+}
+
+.fader-meter-right {
+  
 }
 
 .pad {
