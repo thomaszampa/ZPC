@@ -2,6 +2,42 @@ html body {
   background-color: #F2F3F5;
 }
 
+.left-rail {
+  position: absolute;
+  margin: 0;
+  
+  top: 0;
+  left: 0;
+
+  height: 145%;
+  width: 2vw;
+
+  background-color: #C4C4C6;
+}
+
+.right-rail {
+  position: absolute;
+  margin: 0;
+
+  top: 0;
+  right: 0;
+
+  height: 145%;
+  width: 2vw;
+
+  background-color: #C4C4C6; 
+}
+
+.item-1 h1 {
+  position: relative;
+  margin: auto;
+
+  text-align: center;
+  font-size: 5em;
+  
+  color: #D32E3C;
+}
+
 .interface-container {
   position: relative;
   
@@ -50,6 +86,47 @@ html body {
   background-color: #3189D3;
 }
 
+.speaker-container {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  padding: 10px;
+  margin: 10px;
+
+  justify-content: center
+}
+
+.speaker {
+  position: relative;
+  
+  margin: 10px;
+  
+  width: 150px;
+  height: 40%;
+
+  border-radius: 5px;
+
+  background-color: #343027;
+}
+
+.right-speaker {
+  position: relative;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+  top: 10%;
+  right: 0;
+
+  width: 35%;
+  height: 5%;
+
+  border-radius: 5px;
+
+  background-color: #343027;
+}
+ 
 .outter-knob {
   position: relative;
   margin: auto;
@@ -183,4 +260,37 @@ html body {
   border-right-width: 10px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.bottom-rail {
+  position: relative;
+  margin: auto;
+
+  left: 0;
+
+  width: 97%;
+  height: 5vh;
+
+  background-color: #BABCB1;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+
+  left: 0;
+
+  width: 100%;
+  height: 30vh;
+
+  background-color: #0B0A10;
+}
+
+footer h1 {
+  position: relative;
+  margin: 50px;
+  
+  font-size: 3em;
+
+  color: white;
 }
