@@ -108,24 +108,6 @@ html body {
 
   background-color: #343027;
 }
-
-.right-speaker {
-  position: relative;
-
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-
-  top: 10%;
-  right: 0;
-
-  width: 35%;
-  height: 5%;
-
-  border-radius: 5px;
-
-  background-color: #343027;
-}
  
 .outter-knob {
   position: relative;
@@ -133,8 +115,8 @@ html body {
 
   top: 25%;
 
-  width: 40%;
-  height: 40%;
+  width: 150px;
+  height: 150px;
 
   border-radius: 50%;
   border-color: #889699;
@@ -157,6 +139,30 @@ html body {
   border-width: 3px;
   border-radius: 50%;
   border-color: #8C9A9D; 
+}
+
+.pot-container {
+  position: relative;
+  display: grid;
+
+  top: 50px;
+
+  grid-template-columns: auto auto auto;
+
+  justify-content: center;
+}
+
+.pot {
+  position: relative;
+
+  margin: 20px;
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  background-color: #8B8B8B;
 }
 
 .meter-container {
@@ -260,6 +266,16 @@ html body {
   border-right-width: 10px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.loop-container {
+  position: relative;
+  margin: auto;
+
+  height: 96%;
+  width: 80%;
+
+  background-color: #DCDDE2;
 }
 
 .bottom-rail {
