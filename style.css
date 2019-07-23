@@ -55,12 +55,11 @@ html body {
   background-color: #E6E7EB;
 }
 
-.ZPC {
-  position: absolute;
-}
+.title-container {
+  position: relative;
+  margin: auto;
 
-.five-thousand {
-  position: absolute;
+  height: 30%;
 }
 
 .interface-outter-screen {
@@ -72,7 +71,7 @@ html body {
 
   width: 92%;
   height: 65%;
-  top: 25%;
+  top: 2%;
 
   background-color: #0F0E14;
 }
