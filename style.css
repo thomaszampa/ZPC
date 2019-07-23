@@ -34,8 +34,13 @@ html body {
 
   text-align: center;
   font-size: 5em;
+  letter-spacing: .03em;
   
   color: #D32E3C;
+}
+
+.item-1 div {
+
 }
 
 .interface-container {
@@ -48,6 +53,14 @@ html body {
   height: 100%;
 
   background-color: #E6E7EB;
+}
+
+.ZPC {
+  position: absolute;
+}
+
+.five-thousand {
+  position: absolute;
 }
 
 .interface-outter-screen {
