@@ -340,6 +340,16 @@ html body {
 
   font-family: technoid;
   font-style: italic;
+
+  transition: all 0.07s;
+}
+
+.playing {
+  transform:scale(0.97);
+
+  background-color: #889699;
+
+  color: white;
 }
 
 .loop-container {

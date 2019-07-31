@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -52,7 +52,7 @@
           <div class="speaker"></div>
         </div>
       </div>
-      <div class="item-4">4</div>
+      <div class="item-4"></div>
       <div class="item-5">
         <div class="outter-knob">
           <div class="inner-knob"></div>
@@ -124,7 +124,45 @@
       <div class="item-14"></div>
     </div>
     <div class="bottom-rail"></div>
+
+    <audio data-key="49" src="./samples/samp1.wav"></audio>
+    <audio data-key="50" src="./samples/samp2.wav"></audio>
+    <audio data-key="51" src="./samples/samp3.wav"></audio>
+    <audio data-key="52" src="./samples/samp4.wav"></audio>
+    <audio data-key="81" src="./samples/snare1.wav"></audio>
+    <audio data-key="87" src="./samples/snare2.wav"></audio>
+    <audio data-key="69" src="./samples/clap.wav"></audio>
+    <audio data-key="82" src="./samples/rim.wav"></audio>
+    <audio data-key="65" src="./samples/808.wav"></audio>
+    <audio data-key="83" src="./samples/808glide.wav"></audio>
+    <audio data-key="68" src="./samples/openhat1.wav"></audio>
+    <audio data-key="70" src="./samples/openhat2.wav"></audio>
+    <audio data-key="90" src="./samples/kick1.wav"></audio>
+    <audio data-key="88" src="./samples/stomp.wav"></audio>
+    <audio data-key="67" src="./samples/closedhat1.wav"></audio>
+    <audio data-key="86" src="./samples/closedhat2.wav"></audio>
+
     <footer><h1>THOMAS ZAMPA</h1></footer>
-    <script type="text/javascript"></script>
+
+    <script type="text/javascript">
+      window.addEventListener("keydown", function(e) {
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const pad = document.querySelector(`.pad[data-key="${e.keyCode}"]`);
+        if (!audio) return;
+        audio.currentTime = 0;
+        audio.play();
+        pad.classList.add("playing");
+      });
+
+      function removeTransition(e) {
+        if (e.propertyName !== "transform") return;
+
+        this.classList.remove("playing");
+      }
+
+      const pads = document.querySelectorAll(".pad");
+
+      pads.forEach(key => key.addEventListener("transitionend", removeTransition));
+    </script>
   </body>
 </html>
