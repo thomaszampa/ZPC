@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'technoid';
+  src: url('./fonts/TECHNOID.TTF');
+}
+
 html body {
   background-color: #F2F3F5;
 }
@@ -60,6 +65,36 @@ html body {
   margin: auto;
 
   height: 30%;
+}
+
+.ZPC {
+  position: absolute;
+  margin: 0;
+
+  right: 27%;
+  top: 10%;
+
+  font-family: technoid;
+  font-size: 10vh;
+  font-style: italic;
+  letter-spacing: .2vw;
+
+  color: #CCCCCE;
+}
+
+.two-thousand {
+  position: absolute;
+  margin: 0;
+
+  right: 3.75%;
+  top: 40%;
+
+  font-family: technoid;
+  font-style: italic;
+  font-size: 6.4vh;
+  letter-spacing: .2vw;
+
+  color: #a3a4a9;
 }
 
 .interface-outter-screen {
