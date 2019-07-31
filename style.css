@@ -44,10 +44,6 @@ html body {
   color: #D32E3C;
 }
 
-.item-1 div {
-
-}
-
 .interface-container {
   position: relative;
   
@@ -341,6 +337,9 @@ html body {
   border-right-width: 10px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+
+  font-family: technoid;
+  font-style: italic;
 }
 
 .loop-container {
